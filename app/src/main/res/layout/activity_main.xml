@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+   >
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_weight="1.0"
+            android:fontFamily="serif"
+            android:text="Freedium"
+            />
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="50dp"
+            android:layout_weight="1.0"
+            android:text="About"
+            android:onClick="about"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+<com.google.android.material.textview.MaterialTextView
+    android:drawableLeft="@drawable/ic_security"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+
+    android:text="Your Paywall \n Breakthrough For Medium! "
+    android:gravity="center"
+    android:typeface="serif"
+    android:textSize="30dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:hint="Enter Your Medium Article Link"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+
+        android:layout_marginTop="20dp"
+
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/url_user"
+>
+
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/paywall"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:text="Get Article For Free" />
+</LinearLayout>
+
+
