@@ -75,6 +75,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginRight="5dp"
         android:text="Get Article For Free" />
+
 </LinearLayout>
 
 

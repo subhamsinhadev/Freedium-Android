@@ -102,7 +102,7 @@ public void about(View v){
     md.setPositiveButton("Github", new DialogInterface.OnClickListener() {
         @Override
         public void onClick(DialogInterface dialog, int which) {
-            Intent i=new Intent().setAction(Intent.ACTION_VIEW).setData(Uri.parse("https://github.com/subhamsinhadev"));
+            Intent i=new Intent().setAction(Intent.ACTION_VIEW).setData(Uri.parse("https://github.com/subhamsinhadev/Freedium-Android"));
             startActivity(i);
 
 
