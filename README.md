@@ -30,8 +30,8 @@ Share with Ease – Share article links directly from the app with a single tap
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="screenshots/home.jpg" alt="Home Screen" width="30%" style="margin-right:10px;"/>
-    <img src="screenshots/about.jpg" alt="Reading Screen" width="30%" style="margin-right:10px;"/>
+  <img src="https://github.com/subhamsinhadev/Freedium-Android/blob/main/screenshots/home.png" alt="Home Screen" width="30%" style="margin-right:10px;"/>
+    <img src="https://github.com/subhamsinhadev/Freedium-Android/blob/main/screenshots/about.png" alt="Reading Screen" width="30%" style="margin-right:10px;"/>
       </p>
 
 ---
