@@ -24,9 +24,13 @@ import subham.sinha.dev.freedium.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class MainActivity extends AppCompatActivity {
     MaterialButton paywall;
@@ -43,7 +47,38 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         paywall=findViewById(R.id.paywall);
         url_user=findViewById(R.id.url_user);
+        //receiving data from other app
+        Intent i=getIntent();
+        String data=i.getStringExtra(Intent.EXTRA_TEXT);
 
+        //applying regex to get url from medium data
+
+        String url = new String();
+
+        if(data!=null){
+            Pattern text= Pattern.compile("https?://\\S+");//regex to find url from data
+            Matcher matcher=text.matcher(data);
+            matcher.find();
+             url=matcher.group();
+            if(url!=null){
+                if(url.startsWith(("https://"))){
+
+                    Intent in=new Intent(getApplicationContext(),WebviewClass.class);
+                    in.putExtra("geturl",url);
+                    startActivity(in);
+                }else {
+                    Toast.makeText(getApplicationContext(),"Enter A Valid Url",Toast.LENGTH_SHORT).show();
+
+                }
+            }
+
+        }
+
+
+        //passing it to webview
+
+
+    //    }
         paywall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
