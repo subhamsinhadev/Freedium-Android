@@ -124,7 +124,7 @@ This project is licensed under the **MIT License**.
 
 ## 👨‍💻 Author
 
-**Subham Kumar Sinha**  
+** Built with ❤️ by Subham Kumar Sinha**  
 📧 [LinkedIn](https://www.linkedin.com/in/subhamsinhadev)
 
 
