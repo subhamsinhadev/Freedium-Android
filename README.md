@@ -13,6 +13,8 @@
 
 ## 📱 Features
 Key Features:
+
+
 Share Article From Medium Using Share Option-Share Via Link --> Click on Freedium Boom Opened without copy pasting
 
 Bypass Paywall – Access Medium articles without login or paywall interruptions
