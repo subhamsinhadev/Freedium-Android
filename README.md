@@ -12,8 +12,9 @@
 “Read Member only – with Freedium Android.”
 
 ## 📱 Features
-s
 Key Features:
+Share Article From Medium Using Share Option-Share Via Link --> Click on Freedium Boom Opened without copy pasting
+
 Bypass Paywall – Access Medium articles without login or paywall interruptions
 
 Modern UI – Smooth, responsive interface following Material You (MD3) design principles
@@ -49,8 +50,8 @@ Grab the latest release of **Freedium** and enjoy unrestricted reading!
 
 👉 **[Download APK](https://github.com/subhamsinhadev/Freedium-Android/releases/latest)**  
 📄 **[View All Releases](https://github.com/subhamsinhadev/Freedium-Android/releases)**  
-🆕 **Latest Version:** `v1.1.0`  
-🗓️ **Released on:** July 26, 2025
+🆕 **Latest Version:** `v1.2.0`  
+🗓️ **Released on:** July 29, 2025
 
 ---
 ## 🚀 Getting Started
@@ -77,6 +78,8 @@ git clone https://github.com/subhamsinhadev/Freedium-Android.git
 📌 Apply Material 3 design with dynamic themes  
 📌 Implement modern UI/UX using native Java  
 📌 Add share functionality and handle URLs effectively
+📌 Add intent to receivie data from other app
+📌 Using Regex to extract url from medium data (Parsing It To WebView)
 
 ---
 
