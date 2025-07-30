@@ -32,6 +32,7 @@ public class WebviewClass extends AppCompatActivity {
         WebSettings settings=view_fdm.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setLoadsImagesAutomatically(true);
+
         share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

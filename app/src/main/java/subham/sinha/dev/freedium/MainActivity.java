@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
             Matcher matcher=text.matcher(data);
             matcher.find();
              url=matcher.group();
+            //passing it to webview
             if(url!=null){
                 if(url.startsWith(("https://"))){
 
@@ -74,8 +75,8 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
+//upcoming  Clipboard Auto-detect
 
-        //passing it to webview
 
 
     //    }
