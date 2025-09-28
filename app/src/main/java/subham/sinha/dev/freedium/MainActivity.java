@@ -1,5 +1,7 @@
 package subham.sinha.dev.freedium;
 
+import android.content.ClipboardManager;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
@@ -76,6 +78,15 @@ public class MainActivity extends AppCompatActivity {
         }
 
 //upcoming  Clipboard Auto-detect
+        ClipboardManager cm=(ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+        if(cm!=null&&cm.hasText()){
+            String dataclip= cm.getPrimaryClip().toString();
+
+        }
+        else {
+            Toast.makeText(getApplicationContext(),"xxx",Toast.LENGTH_SHORT).show();
+        }
+//       paywall.setText(dataclip);
 
 
 
