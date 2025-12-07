@@ -1,5 +1,7 @@
 package subham.sinha.dev.freedium;
 
+import android.content.ClipboardManager;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
@@ -60,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
             Matcher matcher=text.matcher(data);
             matcher.find();
              url=matcher.group();
+            //passing it to webview
             if(url!=null){
                 if(url.startsWith(("https://"))){
 
@@ -74,8 +77,17 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
+//upcoming  Clipboard Auto-detect
+        ClipboardManager cm=(ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+        if(cm!=null&&cm.hasText()){
+            String dataclip= cm.getPrimaryClip().toString();
 
-        //passing it to webview
+        }
+        else {
+            Toast.makeText(getApplicationContext(),"xxx",Toast.LENGTH_SHORT).show();
+        }
+//       paywall.setText(dataclip);
+
 
 
     //    }
