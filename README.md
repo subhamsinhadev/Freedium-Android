@@ -36,7 +36,57 @@ Share with Ease – Share article links directly from the app with a single tap
 
 ---
 
+---
+# Application Flowcharts
 
+Freedium Android follows a structured and efficient internal workflow designed to securely handle Medium article URLs and provide a clean, paywall-free reading experience.  
+The following diagrams illustrate the app’s core architecture and URL processing pipeline.
+
+---
+
+## 1. Freedium App Architecture
+
+This flowchart represents the internal structure of the Freedium Android application. It shows how the app listens for Medium article links, processes them, and renders the final article view.
+
+### Architecture Diagram  
+![Freedium App Architecture Flowchart](https://github.com/subhamsinhadev/Freedium-Android/blob/main/screenshots/Arch.png)
+
+### Description  
+- The Freedium App acts as the central controller.  
+- Incoming data is captured through:  
+  - Clipboard Listener  
+  - Share Intent Receiver  
+- All received text is forwarded to the URL Parser, which uses regular expressions to extract Medium links.  
+- The sanitized URL is then loaded through the WebView Loader.  
+- The final content is displayed as a clean, paywall-free article.  
+- The application interface uses Material Design 3 with support for dynamic themes.
+
+---
+
+## 2. URL Handling and User Flow
+
+This flowchart outlines the complete flow from app launch to article rendering. It illustrates how the app decides the input method, processes the URL, and loads the final content.
+
+### URL Handling Flow Diagram  
+![URL Handling Flowchart](https://github.com/subhamsinhadev/Freedium-Android/blob/main/screenshots/urlhandle.png)
+
+### Description  
+- When the application is opened, it checks how the Medium URL is being provided:  
+  - Automatic clipboard detection  
+  - Share Intent (Share → Freedium)  
+  - Manual URL entry  
+- All inputs are routed to the URL extraction stage, where a Medium link is identified using regular expressions.  
+- The extracted URL is loaded directly into a secure WebView.  
+- The WebView renders an unrestricted, paywall-free version of the Medium article.
+
+---
+
+## Purpose of These Flowcharts
+
+These diagrams provide a clear understanding of how Freedium Android operates internally.  
+They serve as technical documentation to help contributors, reviewers, and recruiters quickly understand the data flow, architecture, and design decisions behind the application.
+
+---
 
 ## 🛠️ Tech Stack:
 💻 Java (Native Android)
